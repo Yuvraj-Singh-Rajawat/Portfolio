@@ -27,5 +27,4 @@ const InteractiveHoverButton = React.forwardRef(
 );
 
 InteractiveHoverButton.displayName = "InteractiveHoverButton";
-
 export default InteractiveHoverButton;

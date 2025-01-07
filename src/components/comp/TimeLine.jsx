@@ -1,6 +1,6 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
-import "../../fonts.css";
+import "../../css/fonts.css";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -122,7 +122,6 @@ export function TimelineDemo() {
                     {[
                       { short: "C++", full: "Programming in C++" },
                       { short: "MATHS", full: "Mathematics" },
-                      { short: "TOC", full: "Theory of Computation" },
                     ].map((subject, index) => (
                       <div
                         className="bg-slate-300 flex items-center justify-center px-2 py-3 rounded-lg font-bold text-xl group relative"
@@ -151,13 +150,23 @@ export function TimelineDemo() {
           <h3 className="text-neutral-200 font-normal text-4xl">
             Kendriya Vidyalaya No. 2 Gwalior
           </h3>
-          <p className="ml-3 mt-3
-          ">(12th Class)</p>
+          <p
+            className="ml-3 mt-3
+          "
+          >
+            (12th Class)
+          </p>
           <div className="mt-3 ml-3">
             <p className="text-neutral-300">
-              Subject - <span className="text-[#4CC8B2] font-medium">Physics, Chemistry, Maths</span>
+              Subject -{" "}
+              <span className="text-[#4CC8B2] font-medium">
+                Physics, Chemistry, Maths
+              </span>
             </p>
-            <p className="text-neutral-300">Percentage - <span className="text-[#4CC8B2] font-medium">93.4%</span></p>
+            <p className="text-neutral-300">
+              Percentage -{" "}
+              <span className="text-[#4CC8B2] font-medium">93.4%</span>
+            </p>
           </div>
         </div>
       ),
@@ -169,17 +178,24 @@ export function TimelineDemo() {
           <h3 className="text-neutral-200 font-normal text-4xl">
             Kendriya Vidyalaya Shivpuri
           </h3>
-          <p className="ml-3 mt-3
-          ">(10th Class)</p>
+          <p
+            className="ml-3 mt-3
+          "
+          >
+            (10th Class)
+          </p>
           <div className="mt-3 ml-3">
-            <p className="text-neutral-300">Percentage - <span className="text-[#4CC8B2] font-medium">90.8%</span></p>
+            <p className="text-neutral-300">
+              Percentage -{" "}
+              <span className="text-[#4CC8B2] font-medium">90.8%</span>
+            </p>
           </div>
         </div>
       ),
     },
   ];
   return (
-    <div className="w-full bg-slate-900">
+    <div className="w-full">
       <Timeline data={data} />
     </div>
   );

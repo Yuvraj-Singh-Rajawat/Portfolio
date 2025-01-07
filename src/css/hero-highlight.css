@@ -1,0 +1,65 @@
+.interactive-button {
+  position: relative;
+  width: 8rem; /* w-32 */
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 9999px; /* rounded-full */
+  background-color: transparent;
+  border: 2px solid #4cc8b2; /* border-[#4CC8B2] */
+  padding: 0.5rem 0; /* py-2 */
+  text-align: center;
+  font-weight: 600; /* font-semibold */
+  transition: all 0.3s ease-in-out;
+}
+
+.interactive-button span {
+  display: inline-block;
+  transform: translateX(0.25rem); /* translate-x-1 */
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.interactive-button:hover span {
+  transform: translateX(3rem); /* translate-x-12 */
+  opacity: 0;
+}
+
+.interactive-button .hover-content {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transform: translateX(3rem); /* translate-x-12 */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* gap-2 */
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.interactive-button:hover .hover-content {
+  transform: translateX(-0.25rem); /* -translate-x-1 */
+  opacity: 1;
+}
+
+.interactive-button .bg-hover {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  height: 0.5rem; /* h-2 */
+  width: 0.5rem; /* w-2 */
+  transform: scale(1);
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: #4cc8b2; /* bg-[#4CC8B2] */
+  transition: all 0.3s ease-in-out;
+}
+
+.interactive-button:hover .bg-hover {
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  transform: scale(1.8);
+}

@@ -4,7 +4,8 @@ import React from "react";
 
 const Education = () => {
   return (
-    <div className="bg-slate-900">
+    <div className="bg-transparent h-full">
+      <Navbar />
       <TimelineDemo />
     </div>
   );
