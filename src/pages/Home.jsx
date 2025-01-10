@@ -41,7 +41,8 @@ const Home = () => {
             </h1>
             <div className="flex gap-2 text-3xl mt-3">
               <h3 className="">I am a </h3>
-              <span className="text-[#4dbed2e2] text-4xl">
+              {/* previous text color text-[#4dbed2e2] */}
+              <span className="text-[#FFC9A9] text-4xl">
                 <Typewriter
                   options={{ loop: true }}
                   className=""

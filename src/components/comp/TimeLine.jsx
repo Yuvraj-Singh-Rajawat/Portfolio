@@ -144,7 +144,7 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "2021",
+      title: "2020-2021",
       content: (
         <div>
           <h3 className="text-neutral-200 font-normal text-4xl">
@@ -172,7 +172,7 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "2019",
+      title: "2018-2019",
       content: (
         <div>
           <h3 className="text-neutral-200 font-normal text-4xl">

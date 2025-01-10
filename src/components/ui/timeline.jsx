@@ -25,15 +25,18 @@ export const Timeline = ({ data }) => {
 
   return (
     <div className="w-full font-sans md:px-20" ref={containerRef}>
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
+      <div className="max-w-7xl mx-auto pt-20 px-4 md:px-8 lg:px-10">
         <h2
-          className="text-lg md:text-4xl mb-4 text-white max-w-4xl underline underline-offset-8"
-          style={{ fontFamily: "'Ubuntu', sans-serif" }} // Ensure correct usage here
+          className="text-xl md:text-4xl mb-4 text-white max-w-4xl text-center "
+          style={{ fontFamily: "'Ubuntu', sans-serif" }}
         >
-          From Classrooms to Code: My Journey of Learning <p className="pt-3">and Innovation</p>
+          From Classrooms to Code:{" "}
+          <p className="text-[#46a8b9ea] text-5xl mt-3">
+            My Journey of Learning and Innovation
+          </p>
         </h2>
 
-        <p className="text-neutral-300 text-sm md:text-base max-w-[60%] mt-8">
+        <p className="text-neutral-300 text-sm md:text-base text-center mt-10 max-w-[80%] mx-auto">
           From school hallways to engineering labs, this section showcases the
           milestones, achievements, and experiences that fueled my passion for
           technology and prepared me to innovate in computer science.
@@ -41,7 +44,7 @@ export const Timeline = ({ data }) => {
       </div>
       <div
         ref={ref}
-        className="relative max-w-7xl mx-auto pb-20"
+        className="relative max-w-7xl pb-20"
         style={{ fontFamily: "'Ubuntu', sans-serif" }}
       >
         {data.map((item, index) => (
