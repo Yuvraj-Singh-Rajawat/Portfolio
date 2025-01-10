@@ -15,14 +15,16 @@ const Navbar = () => {
         className="w-full h-20 py-4 flex items-center gap-[40%]"
         style={{ fontFamily: "Fira Code, monospace" }}
       >
-        <Link to="/" className="w-20">
+        <Link to="/" className="w-20 hover:scale-125 duration-150">
           <img src="/logo.svg" className="h-12" alt="" />
         </Link>
         <div className="flex items-center justify-center gap-12 w-[70%]">
           <Link
             to="/"
             className={
-              location.pathname === "/" ? "text-[#4CC8B2]" : "hover:text-[#4CC8B2]"
+              location.pathname === "/"
+                ? "text-[#4CC8B2]"
+                : "hover:text-[#4CC8B2] duration-150"
             }
           >
             <span className="text-[#4CC8B2]">01.</span> About
@@ -32,7 +34,7 @@ const Navbar = () => {
             className={
               location.pathname === "/skills"
                 ? "text-[#4CC8B2]"
-                : "hover:text-[#4CC8B2]"
+                : "hover:text-[#4CC8B2] duration-150"
             }
           >
             <span className="text-[#4CC8B2]">02.</span> Skills
@@ -42,7 +44,7 @@ const Navbar = () => {
             className={
               location.pathname === "/projects"
                 ? "text-[#4CC8B2]"
-                : "hover:text-[#4CC8B2]"
+                : "hover:text-[#4CC8B2] duration-150"
             }
           >
             <span className="text-[#4CC8B2]">03.</span> Projects
@@ -52,12 +54,14 @@ const Navbar = () => {
             className={
               location.pathname === "/edu"
                 ? "text-[#4CC8B2]"
-                : "hover:text-[#4CC8B2]"
+                : "hover:text-[#4CC8B2] duration-150"
             }
           >
             <span className="text-[#4CC8B2]">04.</span> Education
           </Link>
-          <InteractiveHoverButton text="Resume" />
+          <a href="https://drive.google.com/file/d/19GPd1LDC0VFT-Ion3HyD2ysyURyrlEBt/view?usp=sharing" target="_blank">
+            <InteractiveHoverButton text="Resume" />
+          </a>
         </div>
       </div>
       <p className="w-full h-[1px] bg-[#8993b1]"></p>
@@ -66,4 +70,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
