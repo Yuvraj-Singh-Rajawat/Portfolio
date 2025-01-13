@@ -71,7 +71,7 @@ const Home = () => {
             </p>
 
             <div className="flex gap-20 mt-5">
-              <a href={'https://drive.google.com/file/d/19GPd1LDC0VFT-Ion3HyD2ysyURyrlEBt/view?usp=sharing'} target="_blank">
+              <a href={'https://drive.google.com/file/d/1z5xcuzD_cCf72nsB-pa_yl81t-UDB4uW/view?usp=drive_link'} target="_blank">
                 <AnimatedModalResume text={"Resume"} icon={"📜"} />
               </a>
               <button>

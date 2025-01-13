@@ -5,50 +5,67 @@ import { IoIosLink } from "react-icons/io";
 export function FollowingPointerDemo() {
   const projects = [
     {
-      title: "Aakar - Notion Clone",
+      title: "Food Delivery App",
+      duration: "3 months",
+      description:
+        "A comprehensive food delivery application with user-friendly interfaces and real-time tracking. Features include restaurant listings, menu browsing, order placement, live order tracking, and secure payment options.",
+      techStack: ["React", "Node.js", "Express.js", "MongoDB"],
+      image: "./temp_image.avif",
+      github: "https://github.com/Yuvraj-Singh-Rajawat/Food-Delivery-App",
+      demo_link: "https://food-on-finger.onrender.com/",
+    },
+    {
+      title: "E-commerce App",
       duration: "4 months",
       description:
-        "A Notion clone designed for note-taking and knowledge management aimed at students, teachers, and professionals. Features rich editing and custom templates.",
-      techStack: ["React", "Node.js", "MongoDB", "Express.js", "JWT", "Bcrypt"],
+        "An e-commerce platform with a wide range of features including product listings, cart, and payment integration. Additional features include user authentication, order history, product reviews, and a recommendation system.",
+      techStack: ["React", "Redux", "Node.js", "Express.js", "MongoDB"],
       image: "./temp_image.avif",
-      github: "https://github.com/yourusername/aakar",
-      demo_link: "https://aakar-app.com",
+      github: "https://github.com/Yuvraj-Singh-Rajawat/Ecommerce-app",
+      demo_link: "https://ecommerce-app-k361.onrender.com",
     },
     {
-      title: "Perfume Selling Website",
+      title: "AI Trip Planner",
       duration: "2 months",
       description:
-        "A responsive and aesthetic website to sell perfumes, offering tailored fragrance recommendations based on user preferences, with separate admin and user interfaces.",
-      techStack: ["React", "Tailwind CSS", "Node.js", "Express.js"],
+        "An AI-powered trip planner that helps users plan their trips efficiently with personalized recommendations. Features include itinerary creation, budget management, and integration with travel APIs for real-time information.",
+      techStack: ["React", "Node.js", "Express.js", "MongoDB", "AI"],
       image: "./temp_image.avif",
-      github: "https://github.com/yourusername/aakar",
-      demo_link: "https://aakar-app.com",
+      github: "https://github.com/Yuvraj-Singh-Rajawat/AI-Trip-Planner",
     },
     {
-      title: "React Portfolio Website",
+      title: "Portfolio Website",
       duration: "1 month",
       description:
-        "A portfolio website built with React showcasing my projects, skills, and achievements. Features modern animations with GSAP and smooth navigation.",
-      techStack: ["React", "GSAP", "React Router DOM"],
+        "A personal portfolio website showcasing my projects, skills, and achievements. Features include a blog section, contact form, and smooth animations for an enhanced user experience.",
+      techStack: ["React", "Tailwind CSS", "Framer Motion"],
       image: "./temp_image.avif",
-      github: "https://github.com/yourusername/aakar",
-      demo_link: "https://aakar-app.com",
+      github: "https://github.com/Yuvraj-Singh-Rajawat/Portfolio",
+      demo_link: "https://yuvraj-portfolio001.vercel.app",
     },
     {
-      title: "Buffalo Milk Business Website",
+      title: "Chess Project",
       duration: "2 months",
       description:
-        "A business website to showcase and sell buffalo milk products, with e-commerce features and user-friendly navigation.",
-      techStack: ["React", "Node.js", "MongoDB"],
+        "A chess game application with multiplayer support and AI opponent. Features include different difficulty levels, game history, and a user-friendly interface for an engaging experience.",
+      techStack: ["React", "Node.js", "Express.js", "MongoDB"],
       image: "./temp_image.avif",
-      github: "https://github.com/yourusername/aakar",
-      demo_link: "https://aakar-app.com",
+      github: "https://github.com/Yuvraj-Singh-Rajawat/Chess-Project",
+    },
+    {
+      title: "Myntra Frontend Clone",
+      duration: "3 months",
+      description:
+        "A frontend clone of the Myntra website with a focus on UI/UX design and responsiveness. Features include product listings, filters, and a seamless user experience similar to the original website.",
+      techStack: ["React", "Tailwind CSS"],
+      image: "./temp_image.avif",
+      github: "https://github.com/Yuvraj-Singh-Rajawat/Myntra-Front-End-Clone",
     },
   ];
 
   return (
     <div
-      className="w-full mx-auto grid grid-cols-3 gap-10 grid-rows-3 "
+      className="w-full mx-auto grid grid-cols-3 gap-10"
       style={{ fontFamily: "Ubuntu" }}
     >
       {projects.map((project, index) => (
