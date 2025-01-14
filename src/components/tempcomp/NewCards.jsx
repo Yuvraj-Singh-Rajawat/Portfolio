@@ -10,7 +10,7 @@ export function FollowingPointerDemo() {
       description:
         "A comprehensive food delivery application with user-friendly interfaces and real-time tracking. Features include restaurant listings, menu browsing, order placement, live order tracking, and secure payment options.",
       techStack: ["React", "Node.js", "Express.js", "MongoDB"],
-      image: "./temp_image.avif",
+      image: "./project_images/food_del.png",
       github: "https://github.com/Yuvraj-Singh-Rajawat/Food-Delivery-App",
       demo_link: "https://food-on-finger.onrender.com/",
     },
@@ -20,7 +20,7 @@ export function FollowingPointerDemo() {
       description:
         "An e-commerce platform with a wide range of features including product listings, cart, and payment integration. Additional features include user authentication, order history, product reviews, and a recommendation system.",
       techStack: ["React", "Redux", "Node.js", "Express.js", "MongoDB"],
-      image: "./temp_image.avif",
+      image: "./project_images/ecommerce.png",
       github: "https://github.com/Yuvraj-Singh-Rajawat/Ecommerce-app",
       demo_link: "https://ecommerce-app-k361.onrender.com",
     },
@@ -29,8 +29,15 @@ export function FollowingPointerDemo() {
       duration: "2 months",
       description:
         "An AI-powered trip planner that helps users plan their trips efficiently with personalized recommendations. Features include itinerary creation, budget management, and integration with travel APIs for real-time information.",
-      techStack: ["React", "Node.js", "Express.js", "MongoDB", "AI"],
-      image: "./temp_image.avif",
+      techStack: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "Firebase",
+        "Chatgpt API",
+        "Google Places API",
+      ],
+      image: "./project_images/ai-trip.png",
       github: "https://github.com/Yuvraj-Singh-Rajawat/AI-Trip-Planner",
     },
     {
@@ -39,7 +46,7 @@ export function FollowingPointerDemo() {
       description:
         "A personal portfolio website showcasing my projects, skills, and achievements. Features include a blog section, contact form, and smooth animations for an enhanced user experience.",
       techStack: ["React", "Tailwind CSS", "Framer Motion"],
-      image: "./temp_image.avif",
+      image: "./project_images/portfolio.png",
       github: "https://github.com/Yuvraj-Singh-Rajawat/Portfolio",
       demo_link: "https://yuvraj-portfolio001.vercel.app",
     },
@@ -48,8 +55,8 @@ export function FollowingPointerDemo() {
       duration: "2 months",
       description:
         "A chess game application with multiplayer support and AI opponent. Features include different difficulty levels, game history, and a user-friendly interface for an engaging experience.",
-      techStack: ["React", "Node.js", "Express.js", "MongoDB"],
-      image: "./temp_image.avif",
+      techStack: ["EJS", "Web Sockets", "Express.js", "Node.js"],
+      image: "./project_images/chess.png",
       github: "https://github.com/Yuvraj-Singh-Rajawat/Chess-Project",
     },
     {
@@ -58,7 +65,7 @@ export function FollowingPointerDemo() {
       description:
         "A frontend clone of the Myntra website with a focus on UI/UX design and responsiveness. Features include product listings, filters, and a seamless user experience similar to the original website.",
       techStack: ["React", "Tailwind CSS"],
-      image: "./temp_image.avif",
+      image: "./project_images/myntra-clone.png",
       github: "https://github.com/Yuvraj-Singh-Rajawat/Myntra-Front-End-Clone",
     },
   ];
@@ -72,7 +79,7 @@ export function FollowingPointerDemo() {
         <FollowerPointerCard
           key={index}
           title={
-            <div className="flex space-x-2 items-center">
+            <div className="flex space-x-2 items-center group">
               <img
                 src={project.image}
                 height="20"
@@ -84,12 +91,12 @@ export function FollowingPointerDemo() {
             </div>
           }
         >
-          <div className="relative overflow-hidden h-full rounded-2xl transition duration-200 group  hover:shadow-xl border border-zinc-600 bg-gray-800">
+          <div className="relative overflow-hidden h-full rounded-2xl transition duration-200 group hover:shadow-xl border border-zinc-600 bg-gray-800">
             <div className="w-full h-60 bg-gray-300 rounded-tr-lg rounded-tl-lg overflow-hidden xl:aspect-w-16 xl:aspect-h-10 relative ">
               <img
                 src={project.image}
                 alt="thumbnail"
-                className="group-hover:scale-95 group-hover:rounded-2xl transform object-cover transition duration-200 h-full w-full"
+                className="group-hover:scale-90 group-hover:rounded-2xl transform object-cover transition duration-200 h-full w-full"
               />
             </div>
             <div className="px-4 mb-4">
