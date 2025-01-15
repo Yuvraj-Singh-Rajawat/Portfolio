@@ -39,6 +39,7 @@ export function FollowingPointerDemo() {
       ],
       image: "./project_images/ai-trip.png",
       github: "https://github.com/Yuvraj-Singh-Rajawat/AI-Trip-Planner",
+      demo_link: "https://trip-ai-uv.vercel.app"
     },
     {
       title: "Portfolio Website",
@@ -58,6 +59,7 @@ export function FollowingPointerDemo() {
       techStack: ["EJS", "Web Sockets", "Express.js", "Node.js"],
       image: "./project_images/chess.png",
       github: "https://github.com/Yuvraj-Singh-Rajawat/Chess-Project",
+      demo_link: "https://chess-project001.onrender.com",
     },
     {
       title: "Myntra Frontend Clone",
