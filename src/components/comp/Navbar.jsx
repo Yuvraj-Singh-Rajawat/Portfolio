@@ -59,12 +59,12 @@ const Navbar = () => {
           >
             <span className="text-[#4CC8B2]">04.</span> Education
           </Link>
-          <a
-            href="https://drive.google.com/file/d/1bkQgweUqlk8z5MZaAts5GDK5_cxy-hp6/view?usp=sharing"
+          <Link
+            to="https://drive.google.com/file/d/14fuu5EMgyFn4Q4EQWurTYSw_PZh1Qf33/view?usp=drive_link"
             target="_blank"
           >
             <InteractiveHoverButton text="Resume" />
-          </a>
+          </Link>
         </div>
       </div>
       <p className="w-full h-[1px] bg-[#8993b1]"></p>

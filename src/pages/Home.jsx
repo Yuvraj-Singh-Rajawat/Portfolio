@@ -9,28 +9,41 @@ import { FaInstagram } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
 import { AnimatedModalContact } from "@/components/tempcomp/AnimatedModelContact";
 import { AnimatedModalResume } from "@/components/tempcomp/AnimatedModelResume";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="w-full h-full min-h-screen">
+      <div className="w-full h-full max-h-screen">
         <div className="fixed bottom-0 left-16 flex flex-col w-10 items-center justify-center gap-7">
-          <div className="hover:text-[#4CC8B2] text-xl cursor-pointer hover:scale-150 duration-200">
+          <Link
+            to="https://github.com/Yuvraj-Singh-Rajawat"
+            target="_blank"
+            className="hover:text-[#4CC8B2] text-xl cursor-pointer hover:scale-150 duration-200"
+          >
             <FaGithub />
-          </div>
-          <div className="hover:text-[#4CC8B2] text-xl cursor-pointer hover:scale-150 duration-200">
+          </Link>
+          <Link
+            to="https://www.linkedin.com/in/yuvraj-singh-rajawat-/"
+            target="_blank"
+            className="hover:text-[#4CC8B2] text-xl cursor-pointer hover:scale-150 duration-200"
+          >
             <FaLinkedinIn />
-          </div>
-          <div className="hover:text-[#4CC8B2] text-xl cursor-pointer hover:scale-150 duration-200">
+          </Link>
+          <Link
+            to="https://leetcode.com/u/YuvrajSinghRajawat/"
+            target="_blank"
+            className="hover:text-[#4CC8B2] text-xl cursor-pointer hover:scale-150 duration-200"
+          >
             <SiLeetcode />
-          </div>
-          <div className="hover:text-[#4CC8B2] text-xl cursor-pointer hover:scale-150 duration-200">
+          </Link>
+          <Link className="hover:text-[#4CC8B2] text-xl cursor-pointer hover:scale-150 duration-200">
             <FaTwitter />
-          </div>
-          <div className="hover:text-[#4CC8B2] text-xl cursor-pointer hover:scale-150 duration-200">
+          </Link>
+          <Link className="hover:text-[#4CC8B2] text-xl cursor-pointer hover:scale-150 duration-200">
             <FaInstagram />
-          </div>
+          </Link>
           <p className="w-[2px] h-28 bg-[#8993b1]"></p>
         </div>
         <div className="mt-32">
@@ -71,14 +84,14 @@ const Home = () => {
             </p>
 
             <div className="flex gap-20 mt-5">
-              <a
-                href={
-                  "https://drive.google.com/file/d/1bkQgweUqlk8z5MZaAts5GDK5_cxy-hp6/view?usp=sharing"
+              <Link
+                to={
+                  "https://drive.google.com/file/d/14fuu5EMgyFn4Q4EQWurTYSw_PZh1Qf33/view?usp=drive_link"
                 }
                 target="_blank"
               >
                 <AnimatedModalResume text={"Resume"} icon={"📜"} />
-              </a>
+              </Link>
               <button>
                 <AnimatedModalContact text={"Contact"} icon={"🙋🏻‍♂️"} />
               </button>
