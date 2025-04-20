@@ -60,7 +60,7 @@ const Navbar = () => {
             <span className="text-[#4CC8B2]">04.</span> Education
           </Link>
           <Link
-            to={import.meta.env.RESUME_LINK}
+            to={import.meta.env.VITE_RESUME_LINK}
             target="_blank"
           >
             <InteractiveHoverButton text="Resume" />
