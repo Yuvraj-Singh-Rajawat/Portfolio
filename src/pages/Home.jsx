@@ -84,12 +84,7 @@ const Home = () => {
             </p>
 
             <div className="flex gap-20 mt-5">
-              <Link
-                to={
-                  "https://drive.google.com/file/d/14fuu5EMgyFn4Q4EQWurTYSw_PZh1Qf33/view?usp=drive_link"
-                }
-                target="_blank"
-              >
+              <Link to={import.meta.env.RESUME_LINK} target="_blank">
                 <AnimatedModalResume text={"Resume"} icon={"📜"} />
               </Link>
               <button>
